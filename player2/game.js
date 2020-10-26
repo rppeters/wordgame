@@ -15,6 +15,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 function theDomHasLoaded(e) {
+        console.log("PLAYER1.js IS RUNNING");
     let url = new URL(window.location.href);
     let gameid = url.searchParams.get("gameid");
     let game = firebase.database().ref("games").child(gameid);
