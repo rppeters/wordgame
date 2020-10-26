@@ -47,6 +47,7 @@ function startTimer(e) {
 }
 
 function pageFullyLoaded(e) {
+    console.log("PLAYER1.js IS RUNNING");
     let guessedWords = [];
     startTimer().then(value => score(guessedWords));
     $( "td" ).click(function() {
